@@ -1,0 +1,9 @@
+%h1 Minesweeper
+
+%table#mine-board
+  %tbody
+    - @minesweeper.rows.times do |row|
+      %tr
+        - @minesweeper.rows.times do |col|
+          %td
+            %span= @minesweeper.board[row][col]
